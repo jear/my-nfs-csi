@@ -25,4 +25,4 @@ spec:
     volumeHandle: nfs.lysdemolab.fr#my-sub-dir-name#my-share
     volumeAttributes:
       server: nfs.lysdemolab.fr
-      share: /export/users
+      share: /export/users/determined-gpu01

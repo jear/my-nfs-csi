@@ -5,11 +5,11 @@ metadata:
 provisioner: nfs.csi.k8s.io
 parameters:
   server: nfs.lysdemolab.fr
-  share: /export/users/
+  share: /export/users/determined-gpu01
   # csi.storage.k8s.io/provisioner-secret is only needed for providing mountOptions in DeleteVolume
   csi.storage.k8s.io/provisioner-secret-name: "mount-options"
   csi.storage.k8s.io/provisioner-secret-namespace: "default"
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
 mountOptions:
-  - nfsvers=3,vers=3,nolock,rw,proto=tcp,mountproto=tcp
+  - nolock,rw,proto=tcp,mountproto=tcp
